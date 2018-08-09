@@ -11,7 +11,6 @@ import { compose, sort, filter } from "ramda";
 class DashboardContainer extends PureComponent<
   { children: Function },
   {
-    hotels: Array<HoteType>,
     name: string,
     sortFunction: Function,
     price: number,
@@ -20,7 +19,6 @@ class DashboardContainer extends PureComponent<
   constructor() {
     super();
     this.state = {
-      hotels: [],
       name: "",
       sortFunction: () => 0,
       price: 0,

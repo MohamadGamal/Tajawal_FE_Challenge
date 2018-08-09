@@ -17,11 +17,13 @@ export default (
       const currentRange = [yearMonthDay(dateFrom), yearMonthDay(dateTo)];
       const dateBetween = dateRangeBetween(currentRange);
       const nights = NightsInDate(dateTo, dateFrom);
-      const filteredList = hotels.filter(({ availability }) =>
-        availability
-          .map(av => [dayMonthYear(av.from), dayMonthYear(av.to)])
-          .some(dateBetween),
-      );
+      const filteredList = hotels
+        .filter(({ availability }) =>
+          availability
+            .map(av => [dayMonthYear(av.from), dayMonthYear(av.to)])
+            .some(dateBetween),
+        )
+        .map(({ price, ...props }) => ({ price: price * nights, ...props }));
 
       setSubmitting(false);
 
