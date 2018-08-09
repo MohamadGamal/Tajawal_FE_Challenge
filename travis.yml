@@ -7,3 +7,5 @@ cache:
 script:
   - npm test
   - npm run bundle:prod
+on:
+  branch: master
