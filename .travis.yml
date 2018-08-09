@@ -17,7 +17,8 @@ before_script:
 script:
   - npm run test:coverage
   - npm run bundle:prod
-
+after_script:
+  - ./cc-test-reporter after-build -t lcov --debug --exit-code $TRAVIS_TEST_RESULT
 on:
   branch: master
   
