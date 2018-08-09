@@ -3,6 +3,7 @@
 
 [![Build Status](https://travis-ci.org/MohamadGamal/Tajawal_FE_Challenge.svg?branch=master)](https://travis-ci.org/MohamadGamal/Tajawal_FE_Challenge)
 [![Maintainability](https://api.codeclimate.com/v1/badges/a0477eb1dac9fd702873/maintainability)](https://codeclimate.com/github/MohamadGamal/Tajawal_FE_Challenge/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/a0477eb1dac9fd702873/test_coverage)](https://codeclimate.com/github/MohamadGamal/Tajawal_FE_Challenge/test_coverage)
 
 
 # Commands
