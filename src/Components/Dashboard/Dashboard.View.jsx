@@ -4,7 +4,7 @@ import { Header, Grid, Card, Button, Input } from "semantic-ui-react";
 import { Slider } from "react-semantic-ui-range";
 
 const DashboardView = (
-  { nights }: { nights: Number },
+  { nights }: { nights: number },
   {
     getMinPrice,
     getMaxPrice,
@@ -27,7 +27,9 @@ const DashboardView = (
     <Grid.Row columns={6}>
       <Grid.Column width={6} />
       <Grid.Column verticalAlign="middle" width={4}>
-        <Header as="h3">Total Nights : {nights}</Header>
+        <Header as="h3">
+          Total Nights : <span className="nights">{nights}</span>
+        </Header>
       </Grid.Column>
       <Grid.Column>
         <Button

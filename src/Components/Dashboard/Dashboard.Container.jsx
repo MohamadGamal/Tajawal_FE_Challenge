@@ -37,7 +37,11 @@ class DashboardContainer extends PureComponent<
   }
 
   getHotels() {
-    return _get(this.props, "location.state", []);
+    return _get(this.props, "location.state.hotels", []);
+  }
+
+  getNights() {
+    return _get(this.props, "location.state.nights", []);
   }
 
   getMinPrice = () =>
@@ -67,10 +71,9 @@ class DashboardContainer extends PureComponent<
 
   render() {
     const { children } = this.props;
-    const { hotels } = this.state;
 
     return children(
-      { hotels, nights: 6 },
+      { nights: this.getNights() },
       {
         getMinPrice: this.getMinPrice,
         getMaxPrice: this.getMaxPrice,
