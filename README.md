@@ -1,6 +1,6 @@
 # Tajawal Frontend Challenge 
 Hi! This is the tajawal code challenge for the frontend , please find the instructions below
-
+[![Build Status](https://travis-ci.org/MohamadGamal/Tajawal_FE_Challenge.svg?branch=master)](https://travis-ci.org/MohamadGamal/Tajawal_FE_Challenge)
 
 # Commands
 
