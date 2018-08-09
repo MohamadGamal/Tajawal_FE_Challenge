@@ -7,8 +7,9 @@ cache:
   directories:
   - node_modules
 script:
-  - npm test
+  - npm test:coverage
   - npm run bundle:prod
 
 on:
   branch: master
+  
