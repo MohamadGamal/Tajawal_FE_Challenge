@@ -13,6 +13,6 @@ declare type FormicViewType = {
   isSubmitting: Function,
 };
 
-declare type HoteType = {
+declare type HotelType = {
   price: Number,
 };
